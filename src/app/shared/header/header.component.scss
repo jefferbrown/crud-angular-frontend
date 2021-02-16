@@ -1,0 +1,22 @@
+.burger {
+  flex: 0 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/*flex: <'f-grow'> <'f-shrink'> <'f-basis'> */
+.menu {
+  flex: 0 1 auto;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}

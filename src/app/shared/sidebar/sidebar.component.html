@@ -1,0 +1,26 @@
+<!-- <div class="sidebar__title">
+  <div class="sidebar__img">
+    <img src="assets/logo.png" alt="logo" />
+    <h1>Codersbite</h1>
+  </div>
+  <i
+    onclick="closeSidebar()"
+    class="fa fa-times"
+    id="sidebarIcon"
+    aria-hidden="true"
+  ></i>
+</div> -->
+
+<nav>
+  <div class="burger">Dashboard</div>
+  <div class="menu">
+    <h3><a routerLink="/dashboard/perfil">Perfil</a></h3>
+    <h3><a routerLink="/dashboard/movies">Movies</a></h3>
+    <h3><a routerLink="/dashboard/users">Usuarios</a></h3>
+  </div>
+  <div class="logout">
+    <button (click)="logout()" type="submit" class="btn btn-danger">
+      Logout
+    </button>
+  </div>
+</nav>

@@ -1,0 +1,33 @@
+<div class="body">
+  <div class="container">
+    <header>Sign-In Form</header>
+    <div class="form-outer">
+      <form (ngSubmit)="login()" [formGroup]="loginForm">
+        <div class="page">
+          <div class="field">
+            <div class="label">Email</div>
+            <input type="text" formControlName="email" />
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input type="password" formControlName="password" />
+          </div>
+
+          <div class="field">
+            <button class="firstNext next">Registrarse</button>
+          </div>
+        </div>
+      </form>
+      <div>
+        <p *ngIf="campoNoValido('email')">
+          * El email es obligatorio y tiene que ser válido
+        </p>
+        <p *ngIf="campoNoValido('password')">
+          * El email es obligatorio y tiene que ser válido
+        </p>
+      </div>
+
+      <a routerLink="/register"><b>Sign Up</b></a>
+    </div>
+  </div>
+</div>

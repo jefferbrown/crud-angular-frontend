@@ -1,0 +1,15 @@
+<nav>
+  <div class="burger">
+    <div class="nav_icon" onclick="toggleSidebar()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="title">
+    {{ user.email | slice: 0:20 }}{{ user.email.length > 20 ? "..." : "" }}
+  </div>
+  <div>
+    <ul class="menu">
+      <button (click)="logout()" type="submit">Logout</button>
+    </ul>
+  </div>
+</nav>

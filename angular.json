@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "movies-angular": {
+    "crud-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/movies-angular",
+            "outputPath": "dist/crud-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "movies-angular:build"
+            "browserTarget": "crud-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "movies-angular:build:production"
+              "browserTarget": "crud-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "movies-angular:build"
+            "browserTarget": "crud-angular:build"
           }
         },
         "test": {
@@ -113,16 +113,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "movies-angular:serve"
+            "devServerTarget": "crud-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "movies-angular:serve:production"
+              "devServerTarget": "crud-angular:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "movies-angular"
+  "defaultProject": "crud-angular" 
 }
+
+

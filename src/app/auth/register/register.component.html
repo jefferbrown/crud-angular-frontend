@@ -1,0 +1,103 @@
+<!-- <div class="content">
+  <div class="card">
+    <h2 class="card__title">SIGN UP</h2>
+    <form
+      autocomplete="off"
+      (ngSubmit)="newUser()"
+      [formGroup]="registerForm"
+      class="formSignUp"
+    >
+      <label for="nombre">Nombre</label>
+      <input type="text" formControlName="name" class="formSignUp__input" />
+      <label for="apellidos">Apellidos</label>
+      <input type="text" formControlName="subname" class="formSignUp__input" />
+      <label for="apellidos">Email</label>
+      <input type="text" formControlName="email" class="formSignUp__input" />
+      <label for="apellidos">Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        class="formSignUp__input"
+      />
+      <label for="apellidos">Repita Password</label>
+      <input
+        type="password"
+        formControlName="password2"
+        class="formSignUp__input"
+      />
+      <br />
+      <button>Enviar</button>
+    </form>
+    <div>
+      <p *ngIf="campoNoValido('name')">* El nombre es obligatorio</p>
+      <p *ngIf="campoNoValido('subname')">* El nombre es obligatorio</p>
+      <p *ngIf="contrasenasNoValidas()">
+        * Las contraseñas deben de ser iguales
+      </p>
+
+      <p *ngIf="campoNoValido('email')">
+        * El email es obligatorio y tiene que ser válido
+      </p>
+      <p *ngIf="contrasenasNoValidas()">
+        * Las contraseñas deben de ser iguales
+      </p>
+    </div>
+    <a routerLink="/login"><b>Sign In</b></a>
+  </div>
+</div>
+ -->
+<div class="body">
+  <div class="container">
+    <header>Signup Form</header>
+    <div class="form-outer">
+      <form
+        autocomplete="off"
+        (ngSubmit)="newUser()"
+        [formGroup]="registerForm"
+        class="formSignUp"
+      >
+        <div class="page">
+          <div class="field">
+            <div class="label">Name</div>
+            <input type="text" formControlName="name" />
+          </div>
+          <div class="field">
+            <div class="label">Subname</div>
+            <input type="text" formControlName="subname" />
+          </div>
+          <div class="field">
+            <div class="label">Email</div>
+            <input type="text" formControlName="email" />
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input type="password" formControlName="password" />
+          </div>
+          <div class="field">
+            <div class="label">Repetir Password</div>
+            <input type="password" formControlName="password2" />
+          </div>
+
+          <div class="field">
+            <button class="firstNext next">Registrarse</button>
+          </div>
+        </div>
+      </form>
+      <div>
+        <p *ngIf="campoNoValido('name')">* El nombre es obligatorio</p>
+        <p *ngIf="campoNoValido('subname')">* El nombre es obligatorio</p>
+        <p *ngIf="contrasenasNoValidas()">
+          * Las contraseñas deben de ser iguales
+        </p>
+
+        <p *ngIf="campoNoValido('email')">
+          * El email es obligatorio y tiene que ser válido
+        </p>
+        <p *ngIf="contrasenasNoValidas()">
+          * Las contraseñas deben de ser iguales
+        </p>
+      </div>
+      <a routerLink="/login"><b>Sign In</b></a>
+    </div>
+  </div>
+</div>

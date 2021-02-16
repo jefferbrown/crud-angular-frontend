@@ -1,0 +1,46 @@
+<div class="cardss">
+  <div class="cardd">
+    <h3>{{ user.name }}</h3>
+    <h3>{{ user.subname }}</h3>
+    <h3>{{ user.email }}</h3>
+    <h3>{{ user.img }}</h3>
+  </div>
+</div>
+<br />
+<div class="cards">
+  <div class="card">
+    <form [formGroup]="perfilForm" (submit)="actualizarPerfil()">
+      <label>Name</label>
+      <input type="text" formControlName="name" /><br />
+      <label>Subname</label>
+      <input type="text" formControlName="subname" /><br />
+
+      <label>Email</label>
+      <input type="text" formControlName="email" /><br />
+
+      <button
+        type="submit"
+        class="btn btn-success btn-block waves-effect waves-light m-r-10"
+      >
+        <i class="fa fa-save"></i>
+        Guardar cambios
+      </button>
+    </form>
+  </div>
+  <div class="card">
+    <div class="text-center">
+      <img class="img-avatar" />
+      <img class="img-avatar" />
+    </div>
+    <label>Email</label>
+    <input type="file" />
+
+    <button
+      type="button"
+      class="btn btn-success btn-block waves-effect waves-light m-r-10"
+    >
+      <i class="fa fa-save"></i>
+      Cambiar imagen
+    </button>
+  </div>
+</div>
